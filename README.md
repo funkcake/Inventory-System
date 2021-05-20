@@ -1,4 +1,11 @@
 # BBRM
 Project 2
-Brian C.
+
 pena here
+
+munoz here
+
+mike here
+
+casto here
+
