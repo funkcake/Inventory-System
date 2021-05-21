@@ -1,3 +1,8 @@
-const User = require('./User');
+const User = require('./User')
+const Category = require('./Category')
+const Products = require('./Products')
 
-module.exports = { User };
+// create associations
+
+
+module.exports = { User, Category, Products };
