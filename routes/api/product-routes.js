@@ -22,7 +22,7 @@ router.get('/', (req, res) => {
 // GET /api/products/1
 router.get('/:id', (req, res) => {
     // find a single product by its `id`
-    Product.findOne({
+    Products.findOne({
         where: {
             id: req.params.id
         },
@@ -47,7 +47,16 @@ router.get('/:id', (req, res) => {
 });
 
 // POST /api/products
-router.post('/', (req, res) => { });
+router.post('/', (req, res) => {
+    // Products.create({
+    //     product_name: req.body.product_name,
+    //     description: req.body.description,
+    //     price: req.body.price,
+    //     stock: req.body.stock,
+    //     category_id: req.body.category_id
+    // })
+
+});
 
 // PUT /api/products/1
 router.put('/:id', (req, res) => { });
@@ -55,7 +64,7 @@ router.put('/:id', (req, res) => { });
 // DELETE /api/products/1
 router.delete('/:id', (req, res) => {
     // delete one product by its `id` value
-    Product.destroy({
+    Products.destroy({
         where: {
             id: req.params.id
         }
