@@ -7,9 +7,9 @@ router.get('/', (req, res) => {// Access our User model and run .findAll() metho
         attributes: { exclude: ['password'] }
     })
         .then(dbUserData => res.json(dbUserData))
-        .catch(err => {
-            console.log(err);
-            res.status(500).json(err);
+        .catch(e => {
+            console.log(e);
+            res.status(500).json(e);
         });
 });
 
@@ -29,9 +29,9 @@ router.get('/:id', (req, res) => {
             }
             res.json(dbUserData);
         })
-        .catch(err => {
-            console.log(err);
-            res.status(500).json(err);
+        .catch(e => {
+            console.log(e);
+            res.status(500).json(e);
         });
 });
 
@@ -43,9 +43,9 @@ router.post('/', (req, res) => {
         password: req.body.password
     })
         .then(dbUserData => res.json(dbUserData))
-        .catch(err => {
-            console.log(err);
-            res.status(500).json(err);
+        .catch(e => {
+            console.log(e);
+            res.status(500).json(e);
         });
 });
 
@@ -86,9 +86,9 @@ router.put('/:id', (req, res) => {
             }
             res.json(dbUserData);
         })
-        .catch(err => {
-            console.log(err);
-            res.status(500).json(err);
+        .catch(e => {
+            console.log(e);
+            res.status(500).json(e);
         });
 });
 
@@ -106,9 +106,9 @@ router.delete('/:id', (req, res) => {
             }
             res.json(dbUserData);
         })
-        .catch(err => {
-            console.log(err);
-            res.status(500).json(err);
+        .catch(e => {
+            console.log(e);
+            res.status(500).json(e);
         });
 });
 

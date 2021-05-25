@@ -10,9 +10,9 @@ router.get('/', (req, res) => {
         }
     })
         .then(dbUserData => res.json(dbUserData))
-        .catch(err => {
-            console.log(err);
-            res.status(500).json(err);
+        .catch(e => {
+            console.log(e);
+            res.status(500).json(e);
         });
 });
 
