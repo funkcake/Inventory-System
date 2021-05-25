@@ -17,7 +17,7 @@ Products.init({
         allowNull: false
     },
     description: {
-        type: DataTypes.STRING,
+        type: DataTypes.STRING
     },
     price: {
         type: DataTypes.DECIMAL,
@@ -44,9 +44,7 @@ Products.init({
         type: DataTypes.DATE
     },
     tag_id: {
-        type: DataTypes.INTEGER,
-        // autoIncrement: true,
-        // defaultValue: 5000
+        type: DataTypes.INTEGER
     }
 },
     {
