@@ -56,23 +56,32 @@ router.post('/', (req, res) => {
         category_id: req.body.category_id,
         tag_id: req.body.tag_id
     })
-    .then(productData => {
-        if (!productData) {
-            res.status(404).json({ message: 'Product missing at this ID' })
-            return
-        }
-        res.json(productData)
-    })
-    .catch(e => {
-        res.status(500).json(e)
-    })
+        .then(productData => {
+            if (!productData) {
+                res.status(404).json({ message: 'Product missing at this ID' })
+                return
+            }
+            res.json(productData)
+        })
+        .catch(e => {
+            res.status(500).json(e)
+        })
 
 });
 
 // PUT /api/products/1
-router.put('/:id', (req, res) => { 
-    
-});
+router.put('/:id', (req, res) => {
+    Products.update(req.body, {
+        where: {
+            id: req.params.id,
+        }
+    })
+        .then(productData => res.json(productData))
+        .catch(e => {
+            console.log(e);
+            res.status(500).json(e);
+        });
+})
 
 // DELETE /api/products/1
 router.delete('/:id', (req, res) => {
