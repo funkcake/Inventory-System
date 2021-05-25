@@ -17,5 +17,7 @@ A.Figured out something for these routes - still need to discuss and go over to 
 Q.Need to start to figure out how the handlebars routes need to be defined. See AndyTA's repo for reference. 
 A.Used youtube video to understand the handlebars alittle better.  Code working YAYYYY!
 
+- Able to get the login/signup form to pull the dashboard FUCKING YEAH! 
+
 casto here
 

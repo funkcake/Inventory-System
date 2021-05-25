@@ -1,17 +1,16 @@
-
 <div class="row">
 
     <div class='col s12 m4 l5'></div>
     <div class='col s12 m4 l2'>
         <h1>Login</h1>
         <!-- Form to login -->
-        <form method="post">
+        <form method="post" class="login-form">
 
-            <label for="uname"><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" name="uname" required>
+            <label for="uname"><b>Email:</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" id="email-login" required>
 
-            <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
+            <label for="psw"><b>Password:</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" id="password-login" required>
 
             <button class="btn waves-effect waves-light" type="submit">Login</button>
 
@@ -23,13 +22,16 @@
         </form>
         <!-- Form to create an account-->
         <h1>Create Account</h1>
-        <form method="post">
+        <form method="post" class="signup-form">
 
-            <label for="newUname"><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" name="uname" required>
+            <label for="username-signup"><b>Username:</b></label>
+            <input type="text" placeholder="Enter Username" id="username-signup" />
 
-            <label for="newPsw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
+            <label for="newUname"><b>Email:</b></label>
+            <input type="text" placeholder="Enter Email" name="uname" id="email-signup" required>
+
+            <label for="newPsw"><b>Password:</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" id="password-signup" required>
 
             <button class="btn waves-effect waves-light" type="submit">Sign Up</button>
 
@@ -41,3 +43,4 @@
     </div>
     <div class='col s12 m4 l5'></div>
 </div>
+<script src="/javascript/login.js"></script>
