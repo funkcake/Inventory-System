@@ -1,7 +1,23 @@
 <div class="row">
+
+
+
+    <!-- Dropdown Trigger -->
+    <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Drop Me!</a>
+
+    <!-- Dropdown Structure -->
+    <ul id='dropdown1' class='dropdown-content'>
+        <li value=1><a href="#!">PC's</a></li>
+        <li><a href="#!">two</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="#!">three</a></li>
+        <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+        <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+    </ul>
+
     <h3>Search Item</h3>
     <div class='col s12 m4 l3'>
-        <form id="itemSearch"><input id=searchInput type="text" class="searchInput" placeholder="Item Number">
+        <form id="itemSearch" class="searchInput"><input id="searchBox" type="text" placeholder="Item Number">
             <button class="btn waves-effect waves-light" type="submit" class="searchBtn" name="action">Submit
             </button>
         </form>
@@ -45,6 +61,11 @@
         <br>
         <br>
     </div>
+    <ul>
+        {{#each products}}
+        <li>{{this.dataValues.product_name}}</li>
+        {{/each}}
+    </ul>
     {{!-- <div class="col s10 resultsContainer">
         <div class="col s12">
             <div class="card blue-grey darken-1">
@@ -158,5 +179,7 @@
         </div> --}}
     </div>
 </div>
+<script src="/javascript/dashboard.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<script src="./assets/js/script.js"></script>
+{{!--
+<script src="./assets/js/script.js"></script> --}}
