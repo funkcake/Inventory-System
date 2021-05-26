@@ -1,14 +1,33 @@
 const router = require('express').Router();
-const { data } = require('browserslist');
 const sequelize = require('../config/connection');
-const Products = require('../models/Products')
+const { Products, Category } = require('../models')
 
 router.get('/', (req, res) => {
 
-    Products.findAll()
+
+    // Category.findAll({
+    //     include: {
+    //         model: Products,
+    //         attributes: ['id', 'product_name', 'price', 'stock', 'category_id']
+    //     }
+    // })
+    //     .then(categoryData => {
+    //         console.log(categoryData)
+    //         res.render('dashboard', { category: categoryData })
+
+
+    //     })
+    Products.findAll({
+        include: [
+            {
+                model: Category,
+                attributes: ['category_name']
+            }
+        ]
+    })
         .then(data => {
             res.render('dashboard', { products: data })
-            // console.log(data)
+            console.log(data)
         })
 
 

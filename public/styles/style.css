@@ -30,3 +30,7 @@ input[type="text"]:not(.browser-default) {
 h5 {
   font-size: 2.5rem;
 }
+
+browser-default {
+  font-size: 50px !important;
+}
