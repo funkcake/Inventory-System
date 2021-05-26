@@ -13,7 +13,14 @@ app.use(express.urlencoded({ extended: true }));
 // turn on routes
 // app.use(routes);
 
-app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
+app.engine('handlebars', exphbs({
+  defaultLayout: 'main',
+  runtimeOptions: {
+    allowProtoPropertiesByDefault: true,
+    allowProtoMethodsByDefault: true,
+  },
+})
+);
 app.set('view engine', 'handlebars');
 
 app.use(express.json());

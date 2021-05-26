@@ -1,185 +1,90 @@
 <div class="row">
-
-
-
-    <!-- Dropdown Trigger -->
-    <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Drop Me!</a>
-
-    <!-- Dropdown Structure -->
-    <ul id='dropdown1' class='dropdown-content'>
-        <li value=1><a href="#!">PC's</a></li>
-        <li><a href="#!">two</a></li>
-        <li class="divider" tabindex="-1"></li>
-        <li><a href="#!">three</a></li>
-        <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
-        <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
-    </ul>
-
-    <h3>Search Item</h3>
-    <div class='col s12 m4 l3'>
-        <form id="itemSearch" class="searchInput"><input id="searchBox" type="text" placeholder="Item Number">
-            <button class="btn waves-effect waves-light" type="submit" class="searchBtn" name="action">Submit
-            </button>
-        </form>
-    </div>
-
     <div class="col s12 m4 l5">
-        <div class="itemSheet">
-            <h2 class="right-align" id="items">Item Numbers:</h2>
-        </div>
     </div>
-    <div class="col">
-        <h5 class="right-align" id="temp"></h5>
-        <h5 class="right-align" id="description"></h5>
-    </div>
-</div>
+
 </div>
 <div class="row">
-    <div style="background-color: #546e7a; position: sticky; top: 0;" class="col s2 catagories">
+    <div style="background-color: #546e7a; position: sticky; top: 0; border-radius: 5px;" class="col s1 catagories">
         <div class="catagoriesList">
-            <h1 class="center-align white-text">Options</h1>
-        </div>
-        <div class="center-align">
-            <button class="btn-large waves-effect waves-light" style="background-color:#03a9f4;" type="button"
-                onclick="" class="create">Create</button>
+            <h1 class="center-align white-text">Inventory Options</h1>
         </div>
         <br>
         <div class="center-align">
-            <button class="btn-large waves-effect waves-light" style="background-color:#4caf50;" type="button"
-                onclick="" class="update">Update</button>
+            <button class="btn-large waves-effect waves-light" style="background-color:#03a9f4; border-radius: 5px;"
+                type="button" onclick="" class="create">Create</button>
         </div>
         <br>
         <div class="center-align">
-            <button class="btn-large  waves-effect waves-dark" style="background-color:#d50000;" type="button"
-                onclick="" class="delete">Delete</button>
+            <button class="btn-large waves-effect waves-light" style="background-color:#4caf50;border-radius: 5px;"
+                type="button" onclick="" class="update">Update</button>
         </div>
         <br>
         <div class="center-align">
-            <button class="btn-large  waves-effect waves-light" type="button" onclick="" class="showAll">Show
-                All</button>
+            <button class="btn-large  waves-effect waves-dark" style="background-color:#d50000; border-radius: 5px;"
+                type="button" onclick="" class="delete">Delete</button>
         </div>
         <br>
+        <div class="center-align">
+            <button class="btn-large  waves-effect waves-light" type="button"
+                style="background-color:blue; border-radius: 5px;" id="logout" class="showAll">Log
+                Out</button>
+        </div>
         <br>
     </div>
-    <ul>
-        {{#each products}}
-        <li>{{this.dataValues.product_name}}</li>
-        {{/each}}
-    </ul>
-    {{!-- <div class="col s10 resultsContainer">
-        <div class="col s12">
-            <div class="card blue-grey darken-1">
-                <div class="card-content white-text" class="cardInfo">
-                    <span class="card-title" id="brew0">Item Number</span>
-                    <p id="type0">Description Item</p>
-                </div>
-                <div class="card-action">
-                    <a id="link0" href="#" target="_blank">Item Link</a>
-                </div>
-            </div>
-        </div>
-        <div class="col s12">
-            <div class="card blue-grey darken-1">
-                <div class="card-content white-text" class="cardInfo">
-                    <span class="card-title" id="brew1">Item Number</span>
-                    <p id="type1">Description Item</p>
-                </div>
-                <div class="card-action">
-                    <a id="link1" href="#" target="_blank">Item Link</a>
-                </div>
-            </div>
-        </div>
-        <div class="col s12">
-            <div class="card blue-grey darken-1">
-                <div class="card-content white-text" class="cardInfo">
-                    <span class="card-title" id="brew2">Item Number</span>
-                    <p id="type2">Description Item</p>
-                </div>
-                <div class="card-action">
-                    <a id="link2" href="#" target="_blank">Item Link</a>
-                </div>
-            </div>
-        </div>
-        <div class="col s12">
-            <div class="card blue-grey darken-1">
-                <div class="card-content white-text" class="cardInfo">
-                    <span class="card-title" id="brew3">Item Number</span>
-                    <p id="type3">Description Item</p>
-                </div>
-                <div class="card-action">
-                    <a id="link3" href="#" target="_blank">Item Link</a>
-                </div>
-            </div>
-        </div>
-        <div class="col s12">
-            <div class="card blue-grey darken-1">
-                <div class="card-content white-text" class="cardInfo">
-                    <span class="card-title" id="brew4">Item Number</span>
-                    <p id="type4">Description Item</p>
-                </div>
-                <div class="card-action">
-                    <a id="link4" href="#" target="_blank">Item Link</a>
-                </div>
-            </div>
-        </div>
-        <div class="col s12">
-            <div class="card blue-grey darken-1">
-                <div class="card-content white-text" class="cardInfo">
-                    <span class="card-title" id="brew5">Item Number</span>
-                    <p id="type5">Description Item</p>
-                </div>
-                <div class="card-action">
-                    <a id="link5" href="#" target="_blank">Item Link</a>
-                </div>
-            </div>
-        </div>
-        <div class="col s12">
-            <div class="card blue-grey darken-1">
-                <div class="card-content white-text" class="cardInfo">
-                    <span class="card-title" id="brew6">Item Number</span>
-                    <p id="type6">Description Item</p>
-                </div>
-                <div class="card-action">
-                    <a id="link6" href="#" target="_blank">Item Link</a>
-                </div>
-            </div>
-        </div>
-        <div class="col s12">
-            <div class="card blue-grey darken-1">
-                <div class="card-content white-text" class="cardInfo">
-                    <span class="card-title" id="brew7">Item Number</span>
-                    <p id="type7">Description Item</p>
-                </div>
-                <div class="card-action">
-                    <a id="link7" href="#" target="_blank">Item Link</a>
-                </div>
-            </div>
-        </div>
-        <div class="col s12">
-            <div class="card blue-grey darken-1">
-                <div class="card-content white-text" class="cardInfo">
-                    <span class="card-title" id="brew8">Item Number</span>
-                    <p id="type8">Description Item</p>
-                </div>
-                <div class="card-action">
-                    <a id="link8" href="#" target="_blank">Item Link</a>
-                </div>
-            </div>
-        </div>
-        <div class="col s12">
-            <div class="card blue-grey darken-1">
-                <div class="card-content white-text" class="cardInfo">
-                    <span class="card-title" id="brew9">Item Number</span>
-                    <p id="type9">Description Item</p>
-                </div>
-                <div class="card-action">
-                    <a id="link9" href="#" target="_blank">Item Link</a>
-                </div>
-            </div>
-        </div> --}}
+
+    <div class="col s4 browser-default" style="margin-left:100px">
+        <label>
+            <h4>Select Category</h4>
+        </label>
+        <select class="browser-default">
+            <option value="" disabled selected>Categories</option>
+            <option value="1">PCs</option>
+            <option value="2">Monitors</option>
+            <option value="3">Laptops</option>
+            <option value="4">Servers</option>
+            <option value="5">Misc.</option>
+            <option value="6">Switches</option>
+            <option value="7">Tablets</option>
+        </select>
+    </div>
+    <div class="col s9">
+        <table style="margin-left:100px;margin-right:auto;">
+            <thead style="font-size:15px">
+                <tr>
+                    <th></th>
+                    <th>TAG#</th>
+                    <th>Name:</th>
+                    <th>Description:</th>
+                    <th>Unit Price:</th>
+                    <th>Stock</th>
+                    <th>Category</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                {{#each products}}
+                <tr>
+                    <td>
+                        <p>
+                            <label>
+                                <input type="checkbox" class="filled-in" />
+                                <span></span>
+                            </label>
+                        </p>
+                    </td>
+                    <td>{{this.dataValues.id}}</td>
+                    <td>{{this.dataValues.product_name}}</td>
+                    <td>{{this.dataValues.description}}</td>
+                    <td>${{this.dataValues.price}}.00</td>
+                    <td>{{this.dataValues.stock}}</td>
+                    <td>{{this.dataValues.category.category_name}}</td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
     </div>
 </div>
+</div>
 <script src="/javascript/dashboard.js"></script>
+<script src="/javascript/logout.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-{{!--
-<script src="./assets/js/script.js"></script> --}}
