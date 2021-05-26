@@ -3,20 +3,6 @@ const sequelize = require('../config/connection');
 const { Products, Category } = require('../models')
 
 router.get('/', (req, res) => {
-
-
-    // Category.findAll({
-    //     include: {
-    //         model: Products,
-    //         attributes: ['id', 'product_name', 'price', 'stock', 'category_id']
-    //     }
-    // })
-    //     .then(categoryData => {
-    //         console.log(categoryData)
-    //         res.render('dashboard', { category: categoryData })
-
-
-    //     })
     Products.findAll({
         include: [
             {
@@ -27,7 +13,7 @@ router.get('/', (req, res) => {
     })
         .then(data => {
             res.render('dashboard', { products: data })
-            console.log(data)
+            // console.log(data)
         })
 
 
