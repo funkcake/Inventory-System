@@ -11,17 +11,17 @@
         <br>
         <div class="center-align">
             <button class="btn-large waves-effect waves-light" style="background-color:#03a9f4; border-radius: 5px;"
-                type="button" onclick="" class="create">Create</button>
+                type="button" id="createData" class="create">Create</button>
         </div>
         <br>
         <div class="center-align">
             <button class="btn-large waves-effect waves-light" style="background-color:#4caf50;border-radius: 5px;"
-                type="button" onclick="" class="update">Update</button>
+                type="button" id="updateData" class="update">Update</button>
         </div>
         <br>
         <div class="center-align">
             <button class="btn-large  waves-effect waves-dark" style="background-color:#d50000; border-radius: 5px;"
-                type="button" onclick="" class="delete">Delete</button>
+                type="button" class="delete">Delete</button>
         </div>
         <br>
         <div class="center-align">
@@ -61,16 +61,14 @@
                 </tr>
             </thead>
 
-            <tbody>
+            <tbody id="accept">
                 {{#each products}}
                 <tr>
                     <td>
-                        <p>
-                            <label>
-                                <input type="checkbox" class="filled-in" />
-                                <span></span>
-                            </label>
-                        </p>
+                        <label>
+                            <input type="checkbox" class="checkbox" value="checked" />
+                            <span></span>
+                        </label>
                     </td>
                     <td>{{this.dataValues.id}}</td>
                     <td>{{this.dataValues.product_name}}</td>
@@ -85,6 +83,10 @@
     </div>
 </div>
 </div>
+<script>
+
+</script>
+
+
 <script src="/javascript/dashboard.js"></script>
 <script src="/javascript/logout.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>

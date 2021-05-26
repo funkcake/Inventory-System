@@ -34,3 +34,9 @@ h5 {
 browser-default {
   font-size: 50px !important;
 }
+
+.btn {
+  height: 50px;
+  margin: 6px;
+  text-align: center;
+}

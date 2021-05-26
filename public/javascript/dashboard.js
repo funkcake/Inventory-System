@@ -1,19 +1,15 @@
-// async function searchField(event) {
-//     event.preventDefault();
 
-//     const search = document.querySelector('#searchBox').value.trim();
 
-//     // console.log(search)
-// }
+async function create(event) {
+    event.preventDefault();
+    document.location.replace('/crud');
+}
 
-// document.addEventListener('DOMContentLoaded', function () {
-//     var elems = document.querySelectorAll('.dropdown-trigger');
-//     var instances = M.Dropdown.init(elems, options);
-// });
+async function update(event) {
+    event.preventDefault();
+    document.location.replace('/crud');
+}
 
-// document.addEventListener('DOMContentLoaded', function() {
-//     var elems = document.querySelectorAll('select');
-//     var instances = M.FormSelect.init(elems, options);
-//   });
+document.querySelector('#createData').addEventListener('click', create);
+document.querySelector('#updateData').addEventListener('click', update);
 
-// document.querySelector('.searchInput').addEventListener('submit', searchField);

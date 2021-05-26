@@ -3,7 +3,7 @@ const sequelize = require('../config/connection');
 
 
 router.get('/', (req, res) => {
-    res.render('login', { title: 'BBRM LOGIN' })
+    res.render('login', { title: 'BBRM LOGIN', banner: 'BBRM Inventory Login' })
 })
 
 

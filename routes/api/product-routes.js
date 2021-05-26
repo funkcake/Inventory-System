@@ -53,8 +53,7 @@ router.post('/', (req, res) => {
         description: req.body.description,
         price: req.body.price,
         stock: req.body.stock,
-        category_id: req.body.category_id,
-        tag_id: req.body.tag_id
+        category_id: req.body.category_id
     })
         .then(productData => {
             if (!productData) {
