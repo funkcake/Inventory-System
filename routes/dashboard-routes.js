@@ -1,8 +1,17 @@
 const router = require('express').Router();
+const { data } = require('browserslist');
 const sequelize = require('../config/connection');
+const Products = require('../models/Products')
 
 router.get('/', (req, res) => {
-    res.render('dashboard', { title: 'BBRM DASHBOARD' })
+
+    Products.findAll()
+        .then(data => {
+            res.render('dashboard', { products: data })
+            // console.log(data)
+        })
+
+
 })
 
 
