@@ -13,8 +13,8 @@
             <button class="btn-large waves-effect waves-light" style="background-color:#03a9f4; border-radius: 5px;"
                 type="button" id="createData" class="create">Create</button>
         </div>
-        <br>
-        <div class="center-align">
+        {{!-- <br> --}}
+        {{!-- <div class="center-align">
             <button class="btn-large waves-effect waves-light" style="background-color:#4caf50;border-radius: 5px;"
                 type="button" id="updateData" class="update">Update</button>
         </div>
@@ -22,7 +22,7 @@
         <div class="center-align">
             <button class="btn-large  waves-effect waves-dark" style="background-color:#d50000; border-radius: 5px;"
                 type="button" class="delete">Delete</button>
-        </div>
+        </div> --}}
         <br>
         <div class="center-align">
             <button class="btn-large  waves-effect waves-light" type="button"
@@ -47,7 +47,77 @@
             <option value="7">Tablets</option>
         </select>
     </div>
-    <div class="col s9">
+
+    <table class="table striped">
+        <thead>
+            <tr>
+                <th>TAG#</th>
+                <th>Product Name</th>
+                <th>Description</th>
+                <th>Unit Price</th>
+                <th>In Stock</th>
+                <th>Category</th>
+            </tr>
+        </thead>
+
+        <tbody>{{#each products}}
+            <tr>
+                <td>{{this.dataValues.id}}</td>
+                <td>{{this.dataValues.product_name}}</td>
+                <td>{{this.dataValues.description}}</td>
+                <td>${{this.dataValues.price}}.00</td>
+                <td>{{this.dataValues.stock}}</td>
+                <td>{{this.dataValues.category.category_name}}</td>
+                <td>
+                    <a href="#edit=' + {{this.dataValues.id}} + '" data-target="modal1"
+                        class="btn-floating waves-effect waves-light orange btn modal-trigger hoverable"><i
+                            class="material-icons">edit</i>
+                    </a>
+                    <a href="#delete=' + {{this.dataValues.id}} + '"
+                        class="btn-floating waves-effect waves-light red hoverable"><i class="material-icons">delete</i>
+                    </a>
+                </td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <h4>Edit Record</h4>
+            <div class="row">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input placeholder="Placeholder" id="name" type="text" class="validate">
+                            <label for="name">Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">phone</i>
+                            <input id="phone" placeholder="Placeholder" type="tel" class="validate">
+                            <label for="phone">Phone</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix">signal_cellular_4_bar</i>
+                            <input id="dtmf" placeholder="Placeholder" type="number" class="validate">
+                            <label for="dtmf">DTFM</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Update</a>
+        </div>
+    </div>
+
+    {{!-- <div class="col s9">
         <table style="margin-left:100px;margin-right:auto;">
             <thead style="font-size:15px">
                 <tr>
@@ -66,7 +136,7 @@
                 <tr>
                     <td>
                         <label>
-                            <input type="checkbox" class="checkbox" value="checked" />
+                            <input type="checkbox" class="checkbox" value="checked" id={{this.dataValues.id}} />
                             <span></span>
                         </label>
                     </td>
@@ -80,12 +150,11 @@
                 {{/each}}
             </tbody>
         </table>
-    </div>
+    </div> --}}
+    {{!--
+</div> --}}
 </div>
-</div>
-<script>
 
-</script>
 
 
 <script src="/javascript/dashboard.js"></script>
