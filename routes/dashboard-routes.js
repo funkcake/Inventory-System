@@ -12,8 +12,8 @@ router.get('/', (req, res) => {
         ]
     })
         .then(data => {
-            res.render('dashboard', { products: data })
-            // console.log(data)
+            res.render('dashboard', { products: data, title: 'BBRM DASH', banner: 'BBRM Inventory Dashboard' })
+            console.log(data)
         })
 
 

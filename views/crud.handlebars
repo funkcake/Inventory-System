@@ -2,9 +2,25 @@
 
     <div class='col s12 m4 l5'></div>
     <div class='col s12 m4 l2'>
-        <h3>Edit Inventory</h3>
+
         <!-- Form to enter a product -->
         <form method="post" class="login-form">
+
+            <div class="browser-default">
+                <label>
+                    <h4>Product Edit</h4>
+                </label>
+                <select class="browser-default">
+                    <option value="" disabled selected>Categories</option>
+                    <option value="1">PCs</option>
+                    <option value="2">Monitors</option>
+                    <option value="3">Laptops</option>
+                    <option value="4">Servers</option>
+                    <option value="5">Misc.</option>
+                    <option value="6">Switches</option>
+                    <option value="7">Tablets</option>
+                </select>
+            </div>
 
             <label for="pro"><b>Product Name:</b></label>
             <input type="text" placeholder="Enter Item Name" name="itemName" id="itemName" required>
@@ -18,23 +34,37 @@
             <label for="sto"><b>Stock:</b></label>
             <input type="text" placeholder="Enter Stock" name="stock" id="stock" required>
 
-            <label for="cat"><b>Category:</b></label>
-            <input type="text" placeholder="Enter Category" name="category" id="category" required>
-
             <button class="btn waves-effect waves-light" type="submit">Create</button>
-
-
-
             <button class="btn waves-effect waves-light" type="button"
                 onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Update</button>
 
-            <button class="btn waves-effect waves-light" type="button"
-                onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-
-
+            <button class="btn waves-effect waves-light" type="button" class="cancelbtn" id="cancel">Cancel</button>
         </form>
 
     </div>
-    <div class='col s12 m4 l5'></div>
+
 </div>
-<script src="/javascript/crud.js"></script>
+
+<div class="row">
+
+    <div class='col s12 m4 l5'></div>
+    <div class='col s12 m4 l2'>
+
+        <label>
+            <h4>Category Edit</h4>
+        </label>
+
+        <label for="pro"><b>Category Name:</b></label>
+        <input type="text" placeholder="Enter Item Name" name="itemName" id="itemName" required>
+
+
+        <button class="btn waves-effect waves-light" type="submit">Create</button>
+        <button class="btn waves-effect waves-light" type="button"
+            onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Update</button>
+
+        <button class="btn waves-effect waves-light" type="button" class="cancelbtn" id="cancelCat">Cancel</button>
+        </form>
+
+    </div>
+
+    <script src="/javascript/crud.js"></script>
