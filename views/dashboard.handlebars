@@ -13,16 +13,16 @@
             <button class="btn-large waves-effect waves-light" style="background-color:#03a9f4; border-radius: 5px;"
                 type="button" id="createData" class="create">Create</button>
         </div>
-        {{!-- <br> --}}
-        {{!-- <div class="center-align">
+        <br>
+        <div class="center-align">
             <button class="btn-large waves-effect waves-light" style="background-color:#4caf50;border-radius: 5px;"
                 type="button" id="updateData" class="update">Update</button>
         </div>
         <br>
         <div class="center-align">
             <button class="btn-large  waves-effect waves-dark" style="background-color:#d50000; border-radius: 5px;"
-                type="button" class="delete">Delete</button>
-        </div> --}}
+                type="button" id="delData"class="delete">Delete</button>
+        </div>
         <br>
         <div class="center-align">
             <button class="btn-large  waves-effect waves-light" type="button"
@@ -32,7 +32,7 @@
         <br>
     </div>
 
-    <div class="col s4 browser-default" style="margin-left:100px">
+    {{!-- <div class="col s4 browser-default" style="margin-left:100px">
         <label>
             <h4>Select Category</h4>
         </label>
@@ -46,7 +46,7 @@
             <option value="6">Switches</option>
             <option value="7">Tablets</option>
         </select>
-    </div>
+    </div> --}}
 
     <table class="table striped ">
         <thead>
@@ -68,15 +68,15 @@
                 <td>${{this.dataValues.price}}.00</td>
                 <td>{{this.dataValues.stock}}</td>
                 <td>{{this.dataValues.category.category_name}}</td>
-                <td>
-                    <a href="#edit=' + {{this.dataValues.id}} + '" data-target="modal1"
-                        class="btn-floating waves-effect waves-light orange btn modal-trigger hoverable"><i
+                {{!-- <td>
+                    <a href="/crud"
+                        class="btn-floating waves-effect waves-light orange btn modal-trigger hoverable updateData"><i
                             class="material-icons">edit</i>
                     </a>
-                    <a href="#delete=' + {{this.dataValues.id}} + '"
-                        class="btn-floating waves-effect waves-light red hoverable"><i class="material-icons">delete</i>
+                    <a href="/crud" class="btn-floating waves-effect waves-light red hoverable"><i
+                            class="material-icons">delete</i>
                     </a>
-                </td>
+                </td> --}}
             </tr>
             {{/each}}
         </tbody>
@@ -98,7 +98,7 @@
     </div> --}}
 
     <!-- Modal Structure -->
-    <div id="modal1" class="modal modal-fixed-footer">
+    {{!-- <div id="modal1" class="modal modal-fixed-footer">
         <div class="modal-content">
             <h4>Edit Record</h4>
             <div class="row">
@@ -145,7 +145,7 @@
         <div class="modal-footer" id="formInput">
             <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Update</a>
         </div>
-    </div>
+    </div> --}}
 
     {{!-- <div class="col s9">
         <table style="margin-left:100px;margin-right:auto;">

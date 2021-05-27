@@ -39,12 +39,12 @@ Products.init({
             model: 'category',
             key: 'id'
         }
-    },
-    created_date: {
-        type: DataTypes.DATE
-    },
-    tag_id: {
-        type: DataTypes.INTEGER
+        // },
+        // created_date: {
+        //     type: DataTypes.DATE
+        // },
+        // tag_id: {
+        //     type: DataTypes.INTEGER
     }
 },
     {

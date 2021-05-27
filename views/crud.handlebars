@@ -4,13 +4,18 @@
     <div class='col s12 m4 l2'>
 
         <!-- Form to enter a product -->
-        <form method="post" class="login-form">
+        <form method="post" class="update-form">
 
             <div class="browser-default">
                 <label>
                     <h4>Product Edit</h4>
                 </label>
-                <select class="browser-default">
+                <select class="browser-default" id="dropDown">
+                    {{!-- {{#each products}}
+                    <option id={{this.dataValues.category.category_name}}>
+                        {{this.dataValues.category.category_name}}
+                    </option>
+                    {{/each}} --}}
                     <option value="" disabled selected>Categories</option>
                     <option value="1">PCs</option>
                     <option value="2">Monitors</option>
@@ -21,6 +26,12 @@
                     <option value="7">Tablets</option>
                 </select>
             </div>
+            <p>
+                <span class="output"></span>
+            </p>
+
+            <label for="pro"><b>TAG#:</b></label>
+            <input type="text" placeholder="Enter Item TAG#" name="itemName" id="tagNum" required>
 
             <label for="pro"><b>Product Name:</b></label>
             <input type="text" placeholder="Enter Item Name" name="itemName" id="itemName" required>
@@ -34,9 +45,11 @@
             <label for="sto"><b>Stock:</b></label>
             <input type="text" placeholder="Enter Stock" name="stock" id="stock" required>
 
-            <button class="btn waves-effect waves-light" type="submit">Create</button>
-            <button class="btn waves-effect waves-light" type="button"
-                onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Update</button>
+            <button class="btn waves-effect waves-light createForm" type="submit">Create</button>
+
+            <button class="btn waves-effect waves-light delForm" type="button" class="delbtn">Delete</button>
+
+            <button class="btn waves-effect waves-light updateForm" type="button">Update</button>
 
             <button class="btn waves-effect waves-light" type="button" class="cancelbtn" id="cancel">Cancel</button>
         </form>
@@ -45,7 +58,7 @@
 
 </div>
 
-<div class="row">
+{{!-- <div class="row">
 
     <div class='col s12 m4 l5'></div>
     <div class='col s12 m4 l2'>
@@ -55,50 +68,18 @@
         </label>
 
         <label for="pro"><b>Category Name:</b></label>
-        <input type="text" placeholder="Enter Item Name" name="itemName" id="itemName" required>
+        <input type="text" placeholder="Enter Category Name" name="itemName" id="itemName" required>
 
 
         <button class="btn waves-effect waves-light" type="submit">Create</button>
-        <button class="btn waves-effect waves-light" type="button"
-            onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Update</button>
+        <button class="btn waves-effect waves-light" type="button" class="updatebtnCat">Update</button>
+        <button class="btn waves-effect waves-light" type="button" class="delbtnCat">Delete</button>
 
         <button class="btn waves-effect waves-light" type="button" class="cancelbtn" id="cancelCat">Cancel</button>
         </form>
 
-    </div>
+    </div> --}}
 
-    <div id="modal1" class="modal modal-fixed-footer">
-        <div class="modal-content">
-            <h4>Edit Record</h4>
-            <div class="row">
-                <form class="col s12">
-                    <div class="row">
-                        <div class="input-field col s6">
-                            <i class="material-icons prefix">account_circle</i>
-                            <input placeholder="Placeholder" id="name" type="text" class="validate">
-                            <label for="name">Name</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <i class="material-icons prefix">phone</i>
-                            <input id="phone" placeholder="Placeholder" type="tel" class="validate">
-                            <label for="phone">Phone</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <i class="material-icons prefix">signal_cellular_4_bar</i>
-                            <input id="dtmf" placeholder="Placeholder" type="number" class="validate">
-                            <label for="dtmf">DTFM</label>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <div class="modal-footer">
-            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Update</a>
-        </div>
-    </div>
+
 
     <script src="/javascript/crud.js"></script>

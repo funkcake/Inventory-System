@@ -7,13 +7,13 @@ router.get('/', (req, res) => {
         include: [
             {
                 model: Category,
-                attributes: ['category_name']
+                attributes: ['id', 'category_name']
             }
         ]
     })
         .then(data => {
             res.render('dashboard', { products: data, title: 'BBRM DASH', banner: 'BBRM Inventory Dashboard' })
-            // console.log(data)
+            console.log(data)
         })
 
 
