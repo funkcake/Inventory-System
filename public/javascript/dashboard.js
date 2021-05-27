@@ -1,5 +1,6 @@
 
 
+
 async function create(event) {
     event.preventDefault();
     document.location.replace('/crud');
@@ -41,26 +42,66 @@ Better way to clone existing table and fill it with data.
 
 $('.btn-floating.orange').on('click', function () {
     // document.location.replace('/')
-    console.log('Orange');
+    // console.log('Orange');
     $('#modal1').modal('open');
     // Get all TD from the cliked Button
-    var td = $(this).parents('tr').find('td:lt(3)');
+    const td = $(this).parents('tr').find('td:lt(6)');
     // $td.each(function(i){
     // Only the $() makes this td Object of DOM
-    $('#name').val($(td[0]).text());
-    $('#phone').val($(td[1]).text());
-    $('#dtmf').val($(td[2]).text());
+    const tag = $('#tag').val($(td[0]).text());
+    const prodName = $('#prodName').val($(td[1]).text());
+    const desc = $('#desc').val($(td[2]).text());
+    const up = $('#unitPrice').val($(td[3]).text());
+    const inS = $('#inStock').val($(td[4]).text());
+    const cat = $('#category').val($(td[5]).text());
     // })
+    // document.querySelector('.formInput').addEventListener('submit', inputData())
+    // console.log("test")
+
+
 });
+
+$('.modal-action').on('click', function () {
+
+    console.log("test")
+})
+
+// function inputData(event) {
+//         event.preventDefault();
+
+//         if (tag && prodName && desc && up && inS && cat) {
+//             const response = await fetch('/api/products', {
+//                 method: 'put',
+//                 body: JSON.stringify({
+//                     tag,
+//                     prodName,
+//                     desc,
+//                     up,
+//                     inS,
+//                     cat
+//                 }),
+//                 headers: { 'Content-Type': 'application/json' }
+//             })
+
+//             if (response.ok) {
+//                 console.log("placed")
+//             } else {
+//                 console.log(response.statusText)
+//             }
+
+//         }
+//     }
+
+
 
 // Delete Button Done!!!
 $('.btn-floating.red').on('click', function () {
     $(this).parents('tr').remove();
 })
 
-$(document).ready(function(){
+$(document).ready(function () {
     $('.modal').modal();
-  });
+});
 document.querySelector('#createData').addEventListener('click', create);
 // document.querySelector('#updateData').addEventListener('click', update);
 
