@@ -4,7 +4,7 @@ const sequelize = require('../config/connection')
 class Products extends Model { }
 
 Products.init({
-    // define columns
+    // define columns for prodcuts
     id: {
         type: DataTypes.INTEGER,
         allowNull: false,
@@ -39,12 +39,6 @@ Products.init({
             model: 'category',
             key: 'id'
         }
-        // },
-        // created_date: {
-        //     type: DataTypes.DATE
-        // },
-        // tag_id: {
-        //     type: DataTypes.INTEGER
     }
 },
     {

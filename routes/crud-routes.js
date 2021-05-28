@@ -14,7 +14,7 @@ router.get('/', (req, res) => {
     })
         .then(data => {
             res.render('crud', { products: data, title: 'BBRM EDIT', title: 'BBRM EDIT', banner: 'BBRM Inventory Edits' })
-            console.log(data)
+            // console.log(data)
         })
 
 })

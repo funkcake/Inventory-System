@@ -56,7 +56,7 @@ async function putCatInfo(event) {
     const stock = document.querySelector('#stock').value.trim()
     const id = document.querySelector('#tagNum').value.trim()
 
-    console.log(id)
+    // console.log(id)
 
     if (id && product_name && description && price && stock && category_id) {
         const response = await fetch(`/api/products/${id}`, {
@@ -107,4 +107,3 @@ document.querySelector(".createForm").addEventListener('click', postCatInfo)
 document.querySelector(".updateForm").addEventListener('click', putCatInfo)
 document.querySelector(".delForm").addEventListener('click', delData);
 document.querySelector('#cancel').addEventListener('click', cancel);
-document.querySelector('#cancelCat').addEventListener('click', cancel);

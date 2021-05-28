@@ -1,7 +1,6 @@
 const User = require('./User')
 const Category = require('./Category')
 const Products = require('./Products')
-//const ProductTag = require('./ProductTag')
 
 // create associations
 

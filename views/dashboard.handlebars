@@ -4,7 +4,8 @@
 
 </div>
 <div class="row">
-    <div style="background-color: #546e7a; position: sticky; top: 0; border-radius: 5px; width:fit-content" class="col s1 catagories">
+    <div style="background-color: #546e7a; position: sticky; top: 0; border-radius: 5px; width:fit-content ;"
+        class="col s1 catagories">
         <div class="catagoriesList">
             <h1 class="center-align white-text">Inventory Options</h1>
         </div>
@@ -32,24 +33,7 @@
         </div>
         <br>
     </div>
-
-    {{!-- <div class="col s4 browser-default" style="margin-left:100px">
-        <label>
-            <h4>Select Category</h4>
-        </label>
-        <select class="browser-default">
-            <option value="" disabled selected>Categories</option>
-            <option value="1">PCs</option>
-            <option value="2">Monitors</option>
-            <option value="3">Laptops</option>
-            <option value="4">Servers</option>
-            <option value="5">Misc.</option>
-            <option value="6">Switches</option>
-            <option value="7">Tablets</option>
-        </select>
-    </div> --}}
-
-    <table class="table striped col s10 ">
+    <table class="table striped col s10" style="margin: 20px;">
         <thead>
             <tr>
                 <th>TAG#</th>
@@ -69,121 +53,11 @@
                 <td>${{this.dataValues.price}}.00</td>
                 <td>{{this.dataValues.stock}}</td>
                 <td>{{this.dataValues.category.category_name}}</td>
-                {{!-- <td>
-                    <a href="/crud"
-                        class="btn-floating waves-effect waves-light orange btn modal-trigger hoverable updateData"><i
-                            class="material-icons">edit</i>
-                    </a>
-                    <a href="/crud" class="btn-floating waves-effect waves-light red hoverable"><i
-                            class="material-icons">delete</i>
-                    </a>
-                </td> --}}
+
             </tr>
             {{/each}}
         </tbody>
     </table>
-
-    {{!--
-    <!-- Modal Trigger -->
-    <a class="waves-effect waves-light btn modal-trigger" data-target="#myModal{{@index}}">Modal</a>
-
-    <!-- Modal Structure -->
-    <div id="modal1" class="modal" id="myModal{{@index}}">
-        <div class="modal-content">
-            <h4>Modal Header</h4>
-            <p>A bunch of text</p>
-        </div>
-        <div class="modal-footer">
-            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
-        </div>
-    </div> --}}
-
-    <!-- Modal Structure -->
-    {{!-- <div id="modal1" class="modal modal-fixed-footer">
-        <div class="modal-content">
-            <h4>Edit Record</h4>
-            <div class="row">
-                <form class="col s12">
-                    <div class="row">
-                        <div class="input-field col s6">
-                            <input placeholder="Placeholder" id="tag" type="tel" class="validate">
-                            <label>TAG#</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <input id="prodName" placeholder="Placeholder" type="tel" class="validate">
-                            <label>Product Name</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <input id="desc" placeholder="Placeholder" type="tel" class="validate">
-                            <label>Description</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <input id="unitPrice" placeholder="Placeholder" type="tel" class="validate">
-                            <label>Unit Price</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <input id="inStock" placeholder="Placeholder" type="tel" class="validate">
-                            <label for="dtmf">In Stock</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <input id="category" placeholder="Placeholder" type="tel" class="validate">
-                            <label>Category</label>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <div class="modal-footer" id="formInput">
-            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Update</a>
-        </div>
-    </div> --}}
-
-    {{!-- <div class="col s9">
-        <table style="margin-left:100px;margin-right:auto;">
-            <thead style="font-size:15px">
-                <tr>
-                    <th></th>
-                    <th>TAG#</th>
-                    <th>Name:</th>
-                    <th>Description:</th>
-                    <th>Unit Price:</th>
-                    <th>Stock</th>
-                    <th>Category</th>
-                </tr>
-            </thead>
-
-            <tbody id="accept">
-                {{#each products}}
-                <tr>
-                    <td>
-                        <label>
-                            <input type="checkbox" class="checkbox" value="checked" id={{this.dataValues.id}} />
-                            <span></span>
-                        </label>
-                    </td>
-                    <td>{{this.dataValues.id}}</td>
-                    <td>{{this.dataValues.product_name}}</td>
-                    <td>{{this.dataValues.description}}</td>
-                    <td>${{this.dataValues.price}}.00</td>
-                    <td>{{this.dataValues.stock}}</td>
-                    <td>{{this.dataValues.category.category_name}}</td>
-                </tr>
-                {{/each}}
-            </tbody>
-        </table>
-    </div> --}}
-    {{!--
-</div> --}}
 </div>
 
 

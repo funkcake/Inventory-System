@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
 h1 {
   font-size: 1.5em;
   margin: 10px;
@@ -39,4 +45,8 @@ browser-default {
   height: 40px;
   margin: 0px;
   text-align: center;
+}
+
+::placeholder {
+  color: black;
 }
