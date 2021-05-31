@@ -1,23 +1,89 @@
-# BBRM
-Project 2
 
-pena here
+  # Project  BBRM
+  
+  ## Badge
 
-munoz here
+  # ![License: Unlicense](https://img.shields.io/badge/license-Unlicense-red.svg)
 
-mike here
-notes: 
-Q.Need to figure out how to create the models for category,product, also create associations for them.
-- A.Figured out how to create models for category and product
-Q.Still need to figure out how to create associations for tables.
-- A.Figured out how the associations work.  Using them will depend on my routes
-- Q.Need to figure out the products post and put routes
-A.Figured out something for these routes - still need to discuss and go over to see about better solutions
+  ## Table of Contents
 
-Q.Need to start to figure out how the handlebars routes need to be defined. See AndyTA's repo for reference. 
-A.Used youtube video to understand the handlebars alittle better.  Code working YAYYYY!
+  * [Description](#description)
+  
+  * [Motivation](#motivation)
 
-- Able to get the login/signup form to pull the dashboard FUCKING YEAH! 
+  * [Code Used](#code_used)
 
-casto here
+  * [Screenshot](#screenshot)
+
+  * [License](#license)
+
+  * [Contributed](#contributed)
+
+  * [Tests](#tests)
+
+  * [Questions](#questions)
+
+  ---
+
+  ## Description
+
+  This project was created to be a tool for an IT department.  The BBRM inventory management tool uses Node.js and Express.js to create a RESTful API.  It also uses Handlebars.js as the templating engine, MySQL and Sequelize ORM for the database.  The BBRM inventory managment tool allows users to sign in, then create,update,delete inventory items.  
+
+  ---
+
+  ## Motivation
+
+  The idea behind this project was to help any IT department or any department to manage their inventory in a more streamline fashion. 
+
+  ---
+
+  ## Code_Used
+
+  JavaScript, Node.js, Express.js, MySQL, Sequelize ORM, HTML, CSS, Handlebars.js
+
+  ---
+
+  ## Screenshot
+
+  Screenshot not provided.
+
+  ---
+
+  ## License
+
+  Link: (https://opensource.org/licenses/Unlicense)
+
+  THE ACCOMPANYING PROGRAM IS PROVIDED UNDER THE TERMS OF THIS (Unlicense) PUBLIC LICENSE (“AGREEMENT”). ANY USE, REPRODUCTION OR DISTRIBUTION OF THE PROGRAM CONSTITUTES RECIPIENT'S ACCEPTANCE OF THIS AGREEMENT.
+
+  ---
+
+  ## Contributed:
+
+  All code contributions have been made by group 8. 
+
+  ---
+
+  ## Tests: 
+
+  n/a
+
+  ## Questions
+
+  If you have any questions on this repo, please contact mellis.eriecon@gmail.com.
+
+  ## GitHub
+
+  * [GitHub Repository Link: BBRM](https://github.com/michealjwellis/BBRM)
+
+  * [Heroku Link: BBRM](https://bbrm.herokuapp.com/)
+
+  * [GitHub Profile Link: michealjwellis](https://github.com/michealjwellis)
+
+  ## CONTRIBUTION:
+
+  Made with ❤️ by Micheal Jw Ellis Sr
+
+  ### Mentions: 
+
+  No mentions provided
 
