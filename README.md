@@ -1,89 +1,89 @@
+# Project BBRM
 
-  # Project  BBRM
-  
-  ## Badge
+## Badge
 
-  # ![License: Unlicense](https://img.shields.io/badge/license-Unlicense-red.svg)
+# ![License: Unlicense](https://img.shields.io/badge/license-Unlicense-red.svg)
 
-  ## Table of Contents
+## Table of Contents
 
-  * [Description](#description)
-  
-  * [Motivation](#motivation)
+- [Description](#description)
 
-  * [Code Used](#code_used)
+- [Motivation](#motivation)
 
-  * [Screenshot](#screenshot)
+- [Code Used](#code_used)
 
-  * [License](#license)
+- [Screenshot](#screenshot)
 
-  * [Contributed](#contributed)
+- [License](#license)
 
-  * [Tests](#tests)
+- [Contributed](#contributed)
 
-  * [Questions](#questions)
+- [Tests](#tests)
 
-  ---
+- [Questions](#questions)
 
-  ## Description
+---
 
-  This project was created to be a tool for an IT department.  The BBRM inventory management tool uses Node.js and Express.js to create a RESTful API.  It also uses Handlebars.js as the templating engine, MySQL and Sequelize ORM for the database.  The BBRM inventory managment tool allows users to sign in, then create,update,delete inventory items.  
+## Description
 
-  ---
+This project was created to be a tool for an IT department. The BBRM inventory management tool uses Node.js and Express.js to create a RESTful API. It also uses Handlebars.js as the templating engine, MySQL and Sequelize ORM for the database. The BBRM inventory managment tool allows users to sign in, then create,update,delete inventory items.
 
-  ## Motivation
+---
 
-  The idea behind this project was to help any IT department or any department to manage their inventory in a more streamline fashion. 
+## Motivation
 
-  ---
+The idea behind this project was to help any IT department or any department to manage their inventory in a more streamline fashion.
 
-  ## Code_Used
+---
 
-  JavaScript, Node.js, Express.js, MySQL, Sequelize ORM, HTML, CSS, Handlebars.js
+## Code_Used
 
-  ---
+JavaScript, Node.js, Express.js, MySQL, Sequelize ORM, HTML, CSS, Handlebars.js
 
-  ## Screenshot
+---
 
-  Screenshot not provided.
+## Screenshot
 
-  ---
+![Login Page](assets\images\Login.jpg)
+![Dashboard](assets\images\Dash.jpg)
+![CRUD](assets\images\CRUD.jpg)
 
-  ## License
+---
 
-  Link: (https://opensource.org/licenses/Unlicense)
+## License
 
-  THE ACCOMPANYING PROGRAM IS PROVIDED UNDER THE TERMS OF THIS (Unlicense) PUBLIC LICENSE (“AGREEMENT”). ANY USE, REPRODUCTION OR DISTRIBUTION OF THE PROGRAM CONSTITUTES RECIPIENT'S ACCEPTANCE OF THIS AGREEMENT.
+Link: (https://opensource.org/licenses/Unlicense)
 
-  ---
+THE ACCOMPANYING PROGRAM IS PROVIDED UNDER THE TERMS OF THIS (Unlicense) PUBLIC LICENSE (“AGREEMENT”). ANY USE, REPRODUCTION OR DISTRIBUTION OF THE PROGRAM CONSTITUTES RECIPIENT'S ACCEPTANCE OF THIS AGREEMENT.
 
-  ## Contributed:
+---
 
-  All code contributions have been made by group 8. 
+## Contributed:
 
-  ---
+All code contributions have been made by group 8.
 
-  ## Tests: 
+---
 
-  n/a
+## Tests:
 
-  ## Questions
+n/a
 
-  If you have any questions on this repo, please contact mellis.eriecon@gmail.com.
+## Questions
 
-  ## GitHub
+If you have any questions on this repo, please contact mellis.eriecon@gmail.com.
 
-  * [GitHub Repository Link: BBRM](https://github.com/michealjwellis/BBRM)
+## GitHub
 
-  * [Heroku Link: BBRM](https://bbrm.herokuapp.com/)
+- [GitHub Repository Link: BBRM](https://github.com/michealjwellis/BBRM)
 
-  * [GitHub Profile Link: michealjwellis](https://github.com/michealjwellis)
+- [Heroku Link: BBRM](https://bbrm.herokuapp.com/)
 
-  ## CONTRIBUTION:
+- [GitHub Profile Link: michealjwellis](https://github.com/michealjwellis)
 
-  Made with ❤️ by Micheal Jw Ellis Sr
+## CONTRIBUTION:
 
-  ### Mentions: 
+Made with ❤️ by Micheal Jw Ellis Sr
 
-  No mentions provided
+### Mentions:
 
+No mentions provided
