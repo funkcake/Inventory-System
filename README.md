@@ -44,9 +44,9 @@ JavaScript, Node.js, Express.js, MySQL, Sequelize ORM, HTML, CSS, Handlebars.js
 
 ## Screenshot
 
-![Login Page](assets\images\Login.jpg)
-![Dashboard](assets\images\Dash.jpg)
-![CRUD](assets\images\CRUD.jpg)
+![Login Page](./assets/images/Login.jpg)
+![Dashboard](./assets/images/Dash.jpg)
+![CRUD](./assets/images/CRUD.jpg)
 
 ---
 
